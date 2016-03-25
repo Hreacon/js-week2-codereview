@@ -11,19 +11,20 @@ import { NewFoodComponent } from './new-food.component';
       <h1>Food Log</h1>
       <p>Average Daily Calories: {{ getAverageCalories() }}</p>
     </div>
-    <new-food (onCreateFood)="createFood($event)"></new-food>  
+    <new-food (onCreateFood)="createFood($event)"></new-food>
     <food-day *ngFor="#currentDay of dates" [day]="currentDay" [foodList]="foods"></food-day>
   `
 })
 export class AppComponent {
-  public foods: Food[];
+  public foods: Food[] = [];
   public dates: string[] = [];
   constructor() {
     console.log("AppComponent Constructor");
-    this.foods = [
-      new Food("Burger", "Delicious bacon cheeseburger", 800, new Date(2016,2,24), 0),
-      new Food("Side salad", "a few leafs of lettuce and a breath of dressing", 100, new Date(), 0)
-    ];
+    for(var i = 17; i < 25; i++) {
+      this.foods.push(new Food("Eggs and toast", "Breakfast", Math.floor(Math.random()*400)+100, new Date(2016,2,i), this.foods.length));
+      this.foods.push(new Food("Sandwich and soup", "Turkey and tomato basil", Math.floor(Math.random()*300)+300, new Date(2016,2,i), this.foods.length));
+      this.foods.push(new Food("Spaghetti", "with meatballs!", Math.floor(Math.random()*550)+500, new Date(2016,2,i), this.foods.length));
+    }
     this.setDates();
   }
   setDates() {
