@@ -10,7 +10,7 @@ export class FoodPipe {
     var desiredCalories = args[0];
     if(desiredCalories === 300)
       return input.filter(function(food) {
-        return food.calories < 300;
+        return food.calories < 301;
       });
     else if(desiredCalories === 301)
       return input.filter(function(food) {
