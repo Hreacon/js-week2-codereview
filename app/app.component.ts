@@ -13,7 +13,7 @@ import { NewFoodComponent } from './new-food.component';
     </div>
     <new-food (onCreateFood)="createFood($event)"></new-food>
     <food-day *ngFor="#currentDay of dates" [day]="currentDay" [foodList]="foods"></food-day>
-  `
+  ` 
 })
 export class AppComponent {
   public foods: Food[];
