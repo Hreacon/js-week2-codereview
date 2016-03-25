@@ -5,7 +5,6 @@ export class Food {
   }
 
   getDateTime(): string {
-    //return this.timestamp.getHours()+":"+this.timestamp.getMinutes()+" "+ this.timestamp.getMonth()+"/"+this.timestamp.getDate()+"/"+this.timestamp.getFullYear();
     return this.getDate();
   }
 

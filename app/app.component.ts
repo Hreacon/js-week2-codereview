@@ -11,9 +11,9 @@ import { NewFoodComponent } from './new-food.component';
       <h1>Food Log</h1>
       <p>Average Daily Calories: {{ getAverageCalories() }}</p>
     </div>
-    <new-food (onCreateFood)="createFood($event)"></new-food>
+    <new-food (onCreateFood)="createFood($event)"></new-food>  
     <food-day *ngFor="#currentDay of dates" [day]="currentDay" [foodList]="foods"></food-day>
-  ` 
+  `
 })
 export class AppComponent {
   public foods: Food[];
