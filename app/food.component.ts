@@ -12,7 +12,7 @@ import { EditFoodComponent } from './edit-food.component';
         <h1 (click)="foodSelected()">{{ food.name }}</h1>
         <div class="details" *ngIf="displayDetails" (click)="editFood()">
           <p>{{ food.description }}</p>
-          <p>Calories: {{ food.calories }}</p>
+          <p>Calories: {{ food.calories }}</p> 
         </div>
       </div>
       <edit-food [food]="food" *ngIf="!displayMain" (closeForm)="closeForm()"></edit-food>
