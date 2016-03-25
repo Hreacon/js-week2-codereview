@@ -7,7 +7,7 @@ import { DayPipe } from './day.pipe';
 @Component({
   selector: "food-list",
   inputs: ['foodList', 'filterAmount', 'day'],
-  pipes: [FoodPipe, DayPipe],
+  pipes: [FoodPipe, DayPipe], 
   directives: [FoodComponent],
   template: `
     <food-view *ngFor="#currentFood of foodList | dayPipe:day | foodPipe:filterAmount" [food]="currentFood"></food-view>
