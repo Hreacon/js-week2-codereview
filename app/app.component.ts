@@ -2,7 +2,7 @@ import { Component } from 'angular2/core';
 import { FoodDayComponent } from './food-day.component';
 import { Food, IFood } from './food.module';
 import { NewFoodComponent } from './new-food.component';
- 
+
 @Component({
   selector: 'my-app',
   directives: [FoodDayComponent, NewFoodComponent],
