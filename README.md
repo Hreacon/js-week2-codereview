@@ -1,16 +1,12 @@
-# _Project Title_
+# _Food Tracker_
 
-#### _A simple template, 3.__.2016_
+#### _A calorie tracking application, 3.25.2016_
 
-### By _** Nicholas Jensen-Hay and **_
+### By _** Nicholas Jensen-Hay **_
 
 ## Description
 
-_This web app is designed to ._
-
-_The goal of this project is to ._
-
-_The project was put together using ._
+This application is designed to let you track your food intake on a basic level, display the data in a visually easy way to read and understand simple metrics like daily intake cheat days.
 
 ## Setup/Installation
 
