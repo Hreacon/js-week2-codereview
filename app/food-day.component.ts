@@ -14,7 +14,7 @@ import { FoodListComponent } from './food-list.component';
         <food-filter (filterEvent)=filterEvent($event)></food-filter>
         <food-list [foodList]="foodList" [day]="day" [filterAmount]="filterAmount"></food-list>
       </div>
-    </div>
+    </div> 
   `
 })
 export class FoodDayComponent {
