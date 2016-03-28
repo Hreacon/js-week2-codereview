@@ -25,5 +25,8 @@ export class NewFoodComponent {
       description: description.value,
       calories: parseInt(calories.value)
     });
+    name.value = '';
+    description.value='';
+    calories.value='';
   }
 }
