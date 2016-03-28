@@ -44,5 +44,6 @@ export class AppComponent {
   }
   createFood(ifood: IFood) {
     this.foods.push(new Food(ifood.name, ifood.description, ifood.calories, new Date(), this.foods.length));
+    this.setDates();
   }
 }
